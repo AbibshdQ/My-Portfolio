@@ -3,18 +3,12 @@
 import React, { useRef } from "react";
 import { Film } from "lucide-react";
 import { useInView } from "motion/react";
-import { personalInfo, projects, skillCategories, socialLinks } from "@/data/portfolioData";
+import { personalInfo, projects,   socialLinks } from "@/data/portfolioData";
 
 type CreditGroup = { role: string; names: string[] };
 
 const GROUPS: CreditGroup[] = [
-  { role: "Written, directed & developed by", names: [personalInfo.name] },
-  ...skillCategories.map((c) => ({
-    role: `Cast · ${c.category}`,
-    names: c.skills.map((s) =>
-      s.level === "Learning" ? `${s.name} (learning)` : s.name
-    ),
-  })),
+   
   {
     role: "Featured productions",
     names: projects.map((p) => `${p.title} (${p.year})`),

@@ -2,7 +2,7 @@ import {
   NavItem,
   PersonalInfo,
   Project,
-  SkillCategory,
+  // SkillCategory,
   SocialLink,
 } from "@/types/portfolio";
 
@@ -53,64 +53,64 @@ export const socialLinks: SocialLink[] = [
   },
 ];
 
-export const skillCategories: SkillCategory[] = [
-  {
-    category: "Frontend Development",
-    description:
-      "Creating responsive, modern, and user-focused web experiences.",
-    skills: [
-      { name: "React", level: "Active" },
-      { name: "Next.js", level: "Active" },
-      { name: "JavaScript (ES6+)", level: "Active" },
-      { name: "TypeScript", level: "Active" },
-      { name: "Tailwind CSS", level: "Active" },
-      { name: "Responsive Web Development", level: "Active" },
-    ],
-  },
-  {
-    category: "Backend Development",
-    description:
-      "Building server-side applications, backend logic, and secure authentication systems.",
-    skills: [
-      { name: "Node.js", level: "Active" },
-      { name: "Express.js", level: "Active" },
-      { name: "Better Auth", level: "Active" },
-      { name: "REST API Integration", level: "Active" },
-    ],
-  },
-  {
-    category: "Database & API Engineering",
-    description:
-      "Designing structured data models and reliable communication between application layers.",
-    skills: [
-      { name: "MongoDB", level: "Active" },
-      { name: "Mongoose", level: "Active" },
-      { name: "API Design", level: "Active" },
-      { name: "Database Design", level: "Active" },
-      { name: "Client-Server Architecture", level: "Active" },
-    ],
-  },
-  {
-    category: "Software Engineering",
-    description:
-      "Applying problem-solving skills and modern development practices to build practical applications.",
-    skills: [
-      { name: "Full-Stack Application Development", level: "Active" },
-      { name: "AI Mindset & Engineering", level: "Active" },
-      { name: "Product Development", level: "Active" },
-      { name: "Problem Solving", level: "Active" },
-    ],
-  },
-  {
-    category: "Tools & Workflow",
-    description:
-      "Using development tools to manage code and maintain efficient workflows.",
-    skills: [
-      { name: "Git", level: "Active" },
-      { name: "GitHub", level: "Active" },
-    ],
-  },
-];
+// export const skillCategories: SkillCategory[] = [
+//   {
+//     category: "Frontend Development",
+//     description:
+//       "Creating responsive, modern, and user-focused web experiences.",
+//     skills: [
+//       { name: "React", level: "Active" },
+//       { name: "Next.js", level: "Active" },
+//       { name: "JavaScript (ES6+)", level: "Active" },
+//       { name: "TypeScript", level: "Active" },
+//       { name: "Tailwind CSS", level: "Active" },
+//       { name: "Responsive Web Development", level: "Active" },
+//     ],
+//   },
+//   {
+//     category: "Backend Development",
+//     description:
+//       "Building server-side applications, backend logic, and secure authentication systems.",
+//     skills: [
+//       { name: "Node.js", level: "Active" },
+//       { name: "Express.js", level: "Active" },
+//       { name: "Better Auth", level: "Active" },
+//       { name: "REST API Integration", level: "Active" },
+//     ],
+//   },
+//   {
+//     category: "Database & API Engineering",
+//     description:
+//       "Designing structured data models and reliable communication between application layers.",
+//     skills: [
+//       { name: "MongoDB", level: "Active" },
+//       { name: "Mongoose", level: "Active" },
+//       { name: "API Design", level: "Active" },
+//       { name: "Database Design", level: "Active" },
+//       { name: "Client-Server Architecture", level: "Active" },
+//     ],
+//   },
+//   {
+//     category: "Software Engineering",
+//     description:
+//       "Applying problem-solving skills and modern development practices to build practical applications.",
+//     skills: [
+//       { name: "Full-Stack Application Development", level: "Active" },
+//       { name: "AI Mindset & Engineering", level: "Active" },
+//       { name: "Product Development", level: "Active" },
+//       { name: "Problem Solving", level: "Active" },
+//     ],
+//   },
+//   {
+//     category: "Tools & Workflow",
+//     description:
+//       "Using development tools to manage code and maintain efficient workflows.",
+//     skills: [
+//       { name: "Git", level: "Active" },
+//       { name: "GitHub", level: "Active" },
+//     ],
+//   },
+// ];
 
 export const projects: Project[] = [
   {
