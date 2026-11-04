@@ -7,22 +7,21 @@ import {
 } from "@/types/portfolio";
 
 export const personalInfo: PersonalInfo = {
-  name: "Borshon Roy",
-  title: "Full-Stack Web Developer",
+  name: "Habib Maulana Shidiq",
+  title: "Software Engineer",
   eyebrow: "FULL-STACK DEVELOPER",
   headline: "Turning ideas into digital experiences.",
   supportingText:
-    "I'm a full-stack web developer building modern, scalable, and user-focused web applications, from intuitive interfaces to reliable backends.",
+    "Seorang pengembang Software Developer yang membangun aplikasi web modern, berfokus pada pengguna dan tertarik dengan machine learning ",
   bioParagraphs: [
-    "I am an emerging web developer driven by the craft of turning concepts into intuitive digital interfaces. With a strong commitment to clean code, semantic structure, and accessible user experiences, I focus on building responsive web applications that feel natural to use.",
-    "My current focus is on deepening my modern frontend and full-stack capabilities with TypeScript, Next.js (App Router), and Tailwind CSS. I prioritize thoughtful problem-solving, continuous learning, and crafting details that bridge visual design with robust code.",
+    "Saya adalah pengembang web pemula yang termotivasi oleh keahlian mengubah konsep menjadi antarmuka digital yang intuitif. Dengan komitmen yang kuat terhadap kode yang bersih, struktur semantik, dan pengalaman pengguna yang mudah diakses, saya fokus pada membangun aplikasi web responsif yang terasa alami untuk digunakan. Fokus saya saat ini adalah memperdalam kemampuan frontend modern dan full-stack saya dengan TypeScript, Next.js (App Router), dan Tailwind CSS. Saya memprioritaskan pemecahan masalah yang cermat, pembelajaran berkelanjutan, dan pembuatan detail yang menjembatani desain visual dengan kode yang kuat..",
   ],
-  email: "borshonroy73@gmail.com",
-  location: "Bangladesh",
+  email: "Habib.maushid69@gmail.com",
+  location: "Indonesia",
   isAvailableForWork: true,
-  resumeUrl: "/resume/Borshon_Roy_Web_Developer_Intern_Resume.pdf",
-  phone: "+880 1540-600072",
-  whatsapp: "+880 1311-950753",
+  // resumeUrl: "/resume/Borshon_Roy_Web_Developer_Intern_Resume.pdf",
+  // phone: "+62 822 8657 0894",
+  whatsapp: "+62 822 8647 0894",
 };
 
 export const navItems: NavItem[] = [
@@ -36,19 +35,19 @@ export const navItems: NavItem[] = [
 export const socialLinks: SocialLink[] = [
   {
     platform: "GitHub",
-    url: "https://github.com/borshon07",
+    url: "https://github.com/AbibshdQ",
     iconName: "github",
     isPlaceholder: false,
   },
   {
     platform: "LinkedIn",
-    url: "https://www.linkedin.com/in/borshon-roy09/",
+    url: "https://",
     iconName: "linkedin",
     isPlaceholder: false,
   },
   {
     platform: "Email",
-    url: "mailto:borshonroy73@gmail.com",
+    url: "mailto:habib.maushid69@gmail.com",
     iconName: "mail",
     isPlaceholder: false,
   },
@@ -115,101 +114,107 @@ export const skillCategories: SkillCategory[] = [
 
 export const projects: Project[] = [
   {
-    id: "bazardor-market-tracker",
-    title: "বাজার দর (BazarDor)",
-    eyebrow: "Full-Stack Next.js 16 App",
+    id: "Sumbar Camp",
+    title: "Sumbar Camp",
+    eyebrow: "Full-Stack Laravel",
     tagline:
-      "Today's grocery market prices in Bangladesh at a glance with daily change tickers.",
+      "Web memudahkan para pegiat untuk merental alat kemah.",
     description:
-      "A Bangla grocery market tracker built with Next.js 16 App Router, TypeScript, and Better Auth. Features an infinite scrolling price ticker, top price risers and fallers, category browsing, and bazar-wise price comparisons connected to MongoDB.",
+      "Web memudahkan para pegiat untuk merental alat kemah",
     technologies: [
-      "Next.js 16",
-      "TypeScript",
+      "Php",
+      "Boostrap",
       "Tailwind CSS",
-      "HeroUI",
-      "Better Auth",
-      "MongoDB",
+      "Javascript",
+      "Mysql",
     ],
-    githubUrl: "https://github.com/borshon07/BazarDor-web-B14-Ass-07",
-    liveUrl: "https://bazar-dor-web-b14-ass-07.vercel.app/",
-    image: "/projects/bazardor.png", // screenshot rakhar por uncomment koro
+    githubUrl: "https://github.com/Abibshd",
+    liveUrl: " ",
+    image: "/projects/Sumbar camp.jpg", // screenshot rakhar por uncomment koro
     challenges: [
-      "Setting up authentication with Better Auth in the Next.js App Router and keeping server and client session handling clear.",
-      "Designing MongoDB data for products, categories and bazar-wise prices so daily changes could be compared quickly.",
-      "Building a smooth infinite price ticker and risers/fallers lists without hurting performance.",
-    ],
+          ],
     improvements: [
-      "Add price history charts for each product.",
-      "Let users set price alerts for the items they follow.",
-      "Add an admin dashboard for managing prices and categories.",
+      
     ],
     featured: true,
-    year: "2026",
+    year: "2023",
     aspect: "wide",
   },
   {
-    id: "fitlog-workout-tracker",
-    title: "FitLog Workout Companion",
-    eyebrow: "Fitness Web Application",
+    id: "Academy Management System",
+    title: "Inovindo Academy Management System",
+    eyebrow: "Inovindo Academy Management System",
     tagline:
-      "Dark-themed workout tracking app with exercise library and personalized workout plans.",
+      "Sebuah ekosistem membantu mengelola peserta magang di perusahaan tersebut.",
     description:
-      "A distraction-free training companion featuring a categorized workout directory with muscle groups, equipment requirements, difficulty filters, and saved exercises built with Next.js and Tailwind CSS.",
+      "Sebuah ekosistem membantu mengelola peserta magang di perusahaan tersebut.",
     technologies: [
-      "Next.js",
-      "TypeScript",
+      "Jwt",
+      "Javascript",
       "Tailwind CSS",
-      "DaisyUI",
       "next-themes",
-      "Sonner",
+      "Laravel",
     ],
-    githubUrl: "https://github.com/borshon07/B-14-A06--FitLog-by-Borshon",
-    liveUrl: "https://b-14-a06-fit-log-by-borshon.vercel.app/",
-    image: "/projects/fitlog.png",
+    githubUrl: "https://github.com/Abibshd",
+    liveUrl: " ",
+    image: "/projects/Dashboardino.jpeg",
     challenges: [
-      "Building filters for muscle group, equipment and difficulty that work together without confusing results.",
-      "Keeping saved exercises and the theme preference consistent across pages.",
-      "Designing a dark interface that stays readable with enough contrast.",
-    ],
+         ],
     improvements: [
-      "Add workout logging with sets, reps and weight.",
-      "Add progress charts over time.",
-      "Add user accounts so plans sync across devices.",
+      
     ],
     featured: true,
-    year: "2026",
+    year: "2024",
     aspect: "square",
   },
   {
-    id: "devstack-builder",
-    title: "DevStack Builder",
-    eyebrow: "Interactive Developer Utility",
+    id: "Machine Learning",
+    title: "Potato Lead Detector",
+    eyebrow: "Deteksi penyakit daun kentang menggunakan machine learning",
     tagline:
-      "Modern developer stack builder for discovering technologies and saving custom stacks.",
+      "Membantu para petani dalam mendeteksi penyakit pada tanaman kentang di daerah sumataera barat bebacis machine learning.",
     description:
-      "An interactive web application enabling developers to explore frontend, backend, database, and dev tool catalogs. Features real-time stack assembly, duplicate-selection prevention, and dynamic toast feedback.",
+      ".",
     technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vite",
-      "React-Toastify",
+      "Flutter",
+      "Python",
+      "Tensoflow",
+      "Sql",
     ],
-    githubUrl: "https://github.com/borshon07/B-14-A05--DevStack-",
-    liveUrl: "https://b14-a05-devstack-by-borshon.netlify.app/",
-    image: "/projects/devstack.png",
+    githubUrl: "https://github.com/Abibshd",
+    liveUrl: "",
+    image: "/projects/Leaf.png",
     challenges: [
-      "Managing the selected-technology state and preventing duplicates while keeping the UI responsive.",
-      "Giving clear toast feedback for add, remove and duplicate actions.",
-      "Organizing a large catalog of technologies into categories that are easy to browse.",
-    ],
+        ],
     improvements: [
-      "Let users save and share their stacks with a link.",
-      "Add search and more technology categories.",
-      "Suggest compatible technologies based on the current stack.",
+       
     ],
     featured: false,
-    year: "2026",
+    year: "2025",
+    aspect: "tall",
+  },
+   {
+    id: "Design",
+    title: "Running App",
+    eyebrow: "Desain UI/UX",
+    tagline:
+      "Mendesign UI/UX untuk aplikasi mobile yang membantu para pelari dalam melacak dan meningkatkan performa lari mereka.",
+    description:
+      ".",
+    technologies: [
+      "Figma",
+       
+    ],
+    githubUrl: "https://github.com/Abibshd",
+    liveUrl: "",
+    image: "/projects/Design App Run.jpg",
+    challenges: [
+        ],
+    improvements: [
+       
+    ],
+    featured: false,
+    year: "2024",
     aspect: "tall",
   },
 ];

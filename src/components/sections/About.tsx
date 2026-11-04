@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { personalInfo, projects, skillCategories } from "@/data/portfolioData";
+import { personalInfo, projects } from "@/data/portfolioData";
 import {
   Atom,
   BookOpen,
@@ -41,30 +41,29 @@ const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
    ===================================================================== */
 
 const intro =
-  "I'm a Full-Stack Web Developer passionate about building modern, scalable, and user-focused web applications. My work focuses on connecting intuitive frontend experiences with reliable backend systems to create meaningful digital products.";
+  "Saya seorang Pengembang Web Full-Stack yang bersemangat membangun aplikasi dan tertatik juga dalam Machine Learning. Saya menikmati proses membangun produk digital yang intuitif dan dapat diandalkan, dari desain antarmuka hingga arsitektur backend. Saya selalu bersemangat untuk mempelajari teknologi baru, meningkatkan keterampilan rekayasa saya, dan berkontribusi pada proyek yang memberikan nilai nyata bagi pengguna.";
 
 const foundation =
-  "My technical foundation includes JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, Mongoose, and Better Auth. Beyond coding, I'm interested in API and database design, client-server architecture, AI-driven engineering workflows, and the overall product development process.";
+  "Keahlian teknis saya meliputi JavaScript, React, Flutter, laravel, Machine Learning. Saya memiliki pengalaman membangun aplikasi web dan seluler, merancang API dan model data, serta pembuatan Model Machine Learning. Saya juga memiliki pemahaman yang kuat tentang arsitektur client-server dan praktik terbaik pengembangan perangkat lunak.";
 
 const education = {
-  degree: "Diploma in Computer Science & Technology",
-  institute: "Dinajpur Government Polytechnic Institute",
-  status: "Currently pursuing",
-  text: "Where I continue to develop my technical knowledge and problem-solving abilities.",
+  degree: "Teknologi Rekayasa Perangkat Lunak",
+  institute: "Politek Negeri Padang",
+  status: "Fresh Graduate",
+  text: "Di sinilah saya terus mengembangkan pengetahuan teknis dan kemampuan pemecahan masalah saya.",
 };
 
 const interests = [
-  "API & database design",
   "Client-server architecture",
   "AI-driven engineering workflows",
   "Product development",
 ];
 
 const belief = {
-  quote: "I believe great software comes from more than writing code.",
-  body: "It requires understanding problems, designing thoughtful solutions, and continuously learning as technology evolves. My goal is to grow as a software engineer, build practical solutions to real-world problems, and contribute to products that deliver meaningful value.",
-  closing:
-    "I'm always exploring new technologies, refining my engineering skills, and turning ideas into functional digital experiences.",
+  // quote: "I believe great software comes from more than writing code.",
+  // body: "It requires understanding problems, designing thoughtful solutions, and continuously learning as technology evolves. My goal is to grow as a software engineer, build practical solutions to real-world problems, and contribute to products that deliver meaningful value.",
+  // closing:
+    // "I'm always exploring new technologies, refining my engineering skills, and turning ideas into functional digital experiences.",
 };
 
 const principles: { icon: LucideIcon; title: string; text: string }[] = [
@@ -100,33 +99,28 @@ const journey: {
   {
     icon: Code2,
     step: "Foundations",
-    title: "HTML, CSS & JavaScript",
-    text: "Started with the basics and practiced problem solving in a public JavaScript repository.",
+    title: "Java dan Php",
+    text: "Memulai dari dasar dan berlatih pemecahan masalah di repositori JavaScript publik.",
   },
   {
     icon: Atom,
     step: "First app",
-    title: "React & TypeScript",
-    text: "Built DevStack Builder with React, TypeScript and Vite, learning components, state and toast feedback.",
+    title: "Laravel",
+    text: "Membuat aplikasi CRUD sederhana dengan Laravel, dan belajar tentang routing, views, dan database.",
   },
   {
     icon: Layers,
     step: "Leveling up",
-    title: "Next.js & Tailwind",
-    text: "Created FitLog, a workout tracker with filters, detail pages and saved exercises.",
+    title: "JavaScript & React.js",
+    text: "Membuat aplikasi web interaktif dengan React.js, dan belajar tentang state management, hooks, dan component lifecycle.",
   },
   {
     icon: Database,
-    step: "Backend & data",
-    title: "Node.js, Express & MongoDB",
-    text: "Moved to the server side: Node.js and Express, MongoDB with Mongoose, and secure authentication with Better Auth.",
+    step: "Leveling up",
+    title: "Flutter & Python",
+    text: "Membuat aplikasi mobile dengan Flutter mengimplemntasikan model machine learning, belajar bagaimana mentraining model untuk aplikasiy.",
   },
-  {
-    icon: Rocket,
-    step: "Now",
-    title: "Product thinking",
-    text: "Designing APIs and data models, thinking in whole products, and studying for my Diploma while building.",
-  },
+  
 ];
 
 /* =====================================================================
@@ -167,39 +161,33 @@ type Hobby = {
 const hobbies: Hobby[] = [
   {
     icon: CricketIcon,
-    title: "Cricket",
-    text: "A game I love. It teaches patience, teamwork and staying calm under pressure.",
+    title: "Sports",
+    text: "Hoby yang membuat saya merasa hidup. dan bisa brinteraksi dengan banyak orang",
     color: "#22C55E",
   },
   {
     icon: Headphones,
     title: "Music",
-    text: "Part of my everyday routine, for staying focused and for unwinding.",
+    text: "Bagian dari rutinitas harian saya, untuk tetap fokus dan untuk bersantai.",
     color: "#EC4899",
   },
   {
     icon: Plane,
     title: "Travel",
-    text: "I enjoy exploring new places and seeing how other people live and work.",
+    text: "Saya senang menjelajahi tempat-tempat baru dan melihat bagaimana orang lain hidup.",
     color: "#38BDF8",
   },
   {
     icon: Gamepad2,
     title: "Gaming",
-    text: "My way to unwind, and a constant source of ideas about interaction and design.",
+    text: "Cara saya untuk bersantai, dan sumber ide yang tak pernah habis tentang interaksi dan desain.",
     color: "#8B5CF6",
   },
 ];
 
-/* Stats real data theke ashe, kono number banano na */
-const SKILL_COUNT = new Set(
-  skillCategories.flatMap((c) => c.skills.map((s) => s.name))
-).size;
-
 const STATS = [
   { value: projects.length, label: "Projects built" },
   { value: projects.filter((p) => p.liveUrl).length, label: "Live demos" },
-  { value: SKILL_COUNT, label: "Skills" },
 ];
 
 /* =====================================================================
@@ -885,10 +873,8 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right: 3D cube + journey */}
+        {/* Right: journey */}
         <div className="lg:col-span-5">
-          <StackCube />
-
           <div className="mb-6 text-xs font-mono uppercase tracking-wider text-muted">
             My programming journey
           </div>
@@ -949,26 +935,7 @@ export default function About() {
           ))}
         </div>
 
-        {/* Belief + goal */}
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={defaultViewport}
-          transition={{ duration: 0.7, ease: EASE }}
-          className="mt-10 rounded-2xl border border-line bg-surface p-6 shadow-xl shadow-black/10 transition-colors duration-300 hover:border-accent/50 sm:p-10"
-        >
-          <p className="max-w-3xl font-display text-3xl italic leading-snug text-fg sm:text-4xl">
-            <span className="text-accent-fg">&ldquo;</span>
-            {belief.quote}
-            <span className="text-accent-fg">&rdquo;</span>
-          </p>
-          <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
-            {belief.body}
-          </p>
-          <p className="mt-5 max-w-3xl border-t border-line-soft pt-5 text-xs font-mono leading-relaxed text-muted">
-            {belief.closing}
-          </p>
-        </motion.div>
+        
       </div>
     </section>
   );

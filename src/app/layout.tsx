@@ -42,11 +42,11 @@ const themeScript = `
 `;
 
 export const metadata: Metadata = {
-    title: "Borshon Roy — Full-Stack Web Developer",
+    title: "Portfolio Habib m.s",
   description:
-    "Portfolio of Borshon Roy, a full-stack web developer building modern, scalable web applications with React, Next.js, Node.js and MongoDB.",
+    "Portfolio of Habib m.s, a full-stack web developer building modern, scalable web applications with React, Next.js, Node.js and MongoDB.",
   keywords: [
-    "Borshon Roy",
+    "Habib m.s",
     "Full-Stack Developer",
     "React",
     "Next.js",
@@ -55,10 +55,10 @@ export const metadata: Metadata = {
     "MongoDB",
     "Portfolio",
   ],
-  authors: [{ name: "Borshon Roy" }],
-  creator: "Borshon Roy",
+  authors: [{ name: "Habib m.s" }],
+  creator: "Habib m.s",
   openGraph: {
-    title: "Borshon Roy — Full-Stack Web Developer",
+    title: "Habib m.s — Full-Stack Web Developer",
     description:
        "Full-stack web developer building modern, scalable web applications.",
     type: "website",

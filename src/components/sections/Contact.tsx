@@ -23,10 +23,10 @@ import {
 } from "motion/react";
 import { defaultViewport } from "@/utils/motion";
 
-const EMAIL = "borshonroy73@gmail.com";
+const EMAIL = "habib.maushid69@gmail.com";
 
 const WHATSAPP_MESSAGE =
-  "Hi Borshon, I found your portfolio and would like to talk.";
+  "Hi Abib, I found your portfolio and would like to talk.";
 
 /* ---------- Animation variants ---------- */
 const container: Variants = {

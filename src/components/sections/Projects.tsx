@@ -317,15 +317,7 @@ export default function Projects() {
             GitHub.
           </span>
         </div>
-        <a
-          href="https://github.com/borshon07"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-fg hover:text-accent-fg px-5 py-2.5 rounded-xl bg-surface-3 hover:bg-surface-4 border border-line hover:border-accent/50 transition-all shrink-0 active:scale-95 shadow-sm"
-        >
-          <span>Explore GitHub</span>
-          <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-        </a>
+      
       </motion.div>
     </section>
   );

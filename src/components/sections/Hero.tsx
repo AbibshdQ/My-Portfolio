@@ -61,9 +61,10 @@ function useIntroReady() {
    Data
    ===================================================================== */
 const ROLES = [
-  "Full-Stack Developer",
-  "React & Next.js Builder",
-  "API & Database Design",
+  "IT Enthusiast",
+  "Full Stack Developer",
+  "Network Engineer",
+  "ML Enthusiast",
   "Always Learning",
 ];
 
@@ -77,16 +78,12 @@ const HEADLINE = [
 
 // Marquee e shudhu asol tech (concept skill na)
 const TECH = [
+  "Javascript",
   "React",
-  "Next.js",
-  "TypeScript",
-  "JavaScript",
   "Tailwind CSS",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "Mongoose",
-  "Better Auth",
+  "Networking",
+  "Flutter",
+  "Python",
   "Git",
   "GitHub",
 ];
@@ -633,7 +630,7 @@ export default function Hero() {
 
                 <div className="relative overflow-hidden rounded-xl sm:rounded-2xl aspect-[3/4] bg-sunken">
                   <Image
-                    src="/Assits/profile images/profile image.jpg"
+                    src="/Assits/profile images/profile image2.jpg"
                     alt={`Portrait of ${personalInfo.name}, ${personalInfo.title}`}
                     width={450}
                     height={600}
@@ -667,43 +664,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Chips: frontend + backend + database */}
-              <FloatingChip
-                name="Next.js"
-                z={90}
-                delay={0}
-                duration={4.2}
-                ready={ready}
-                reduceMotion={reduceMotion}
-                className="-left-8 top-10"
-              />
-              <FloatingChip
-                name="TypeScript"
-                z={70}
-                delay={0.6}
-                duration={5}
-                ready={ready}
-                reduceMotion={reduceMotion}
-                className="-right-8 top-1/3"
-              />
-              <FloatingChip
-                name="Node.js"
-                z={110}
-                delay={1.1}
-                duration={4.6}
-                ready={ready}
-                reduceMotion={reduceMotion}
-                className="-left-10 bottom-28"
-              />
-              <FloatingChip
-                name="MongoDB"
-                z={80}
-                delay={0.3}
-                duration={5.4}
-                ready={ready}
-                reduceMotion={reduceMotion}
-                className="-right-6 bottom-12"
-              />
+             
             </motion.div>
           </motion.div>
         </motion.div>

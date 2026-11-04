@@ -16,7 +16,7 @@ export default function CinemaOpen() {
     window.addEventListener("preloader:done", onDone);
 
     // Safety: preloader kono karone na thakle bar atke thakbe na
-    const fallback = setTimeout(() => setOpen(true), 9000);
+    const fallback = setTimeout(() => setOpen(true), 0);
 
     return () => {
       window.removeEventListener("preloader:done", onDone);
@@ -26,7 +26,7 @@ export default function CinemaOpen() {
 
   useEffect(() => {
     if (!open) return;
-    const t = setTimeout(() => setGone(true), 2600);
+    const t = setTimeout(() => setGone(true), 0);
     return () => clearTimeout(t);
   }, [open]);
 

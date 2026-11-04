@@ -10,10 +10,8 @@ import { personalInfo } from "@/data/portfolioData";
 
 const GREETINGS = [
   { text: "Hello", lang: "en" },
-  { text: "হ্যালো", lang: "bn" },
+  { text: "Hallo", lang: "idn" },
   { text: "Hola", lang: "es" },
-  { text: "こんにちは", lang: "ja" },
-  { text: "Bonjour", lang: "fr" },
 ];
 
 const TAGLINE = "Don't be afraid. It's only a portfolio.";
@@ -175,7 +173,7 @@ function Balloon() {
 
 export default function Preloader() {
   const reduceMotion = useReducedMotion();
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(-1); // -1 = shuru, 0..n-1 = greeting, n = naam
 
